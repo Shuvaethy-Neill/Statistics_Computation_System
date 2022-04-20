@@ -1,5 +1,7 @@
 # Statistics_Computation_System
+**Inter-process communication with Linux message queues modelling the client-server paradigm**
 
+--------------------------------------------
 DESCRIPTION
 --------------------------------------------
 This statistics computation system focuses on inter-process communication using **Linux message queues** while modelling the **client-server paradigm**. The system consists of two processes that will run on the same CPU: **User** (client process) and **Calculator** (server process). 
@@ -83,7 +85,7 @@ Message received from calculator: Number added.
 ```
 As seen in the sample input, the calc process has sent a response to notify the User terminal via its message queue that the entered command was successfully completed. 
 
-**Note**: If the user enters an invalid command (including a command longer than 35 characters), they will be asked to enter a valid command.
+**Note**: *If the user enters an invalid command (including a command longer than 35 characters), they will be asked to enter a valid command.*
 
 Example of corresponding Calculator terminal output for insert command:
 ```
@@ -96,5 +98,5 @@ The number set: 345
 ```
 As seen above, the Calculator terminal has outputted what the User has sent in their message, the average time it took to complete the command, and the current numbers in the stored number set. The list of numbers and the average time will be continually updated as more inputs are sent via the message of User.
 
-**Note**: The outputs of the two terminals above is an example and will vary depending on what the user inputs.
+**Note**: *The outputs of the two terminals above is an example and will vary depending on what the user inputs.*
 
